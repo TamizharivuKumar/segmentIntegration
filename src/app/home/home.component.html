@@ -1,0 +1,32 @@
+<div
+  class="position-absolute top-50 start-50 translate-middle d-grid gap-2 col-3 mx-auto"
+>
+  <h1 class="text-center">Home</h1>
+  <form>
+    <div class="row pb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="First name"
+        aria-label="First name"
+        name="firstName"
+        [(ngModel)]="firstName"
+      />
+    </div>
+    <div class="row pb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Last name"
+        aria-label="Last name"
+        name="lastName"
+        [(ngModel)]="lastName"
+      />
+    </div>
+    <div class="row">
+      <button class="btn btn-primary" type="button" (click)="user()">
+        Button
+      </button>
+    </div>
+  </form>
+</div>
