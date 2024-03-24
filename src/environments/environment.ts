@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  segmentWritekey: '86bzmfSfVT6l2HJmGx7vFvy3bE0lG4Co'
+  segmentWritekey: 'YOUR_WRITE_KEY'
 };
 
 /*

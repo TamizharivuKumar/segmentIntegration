@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AnalyticsBrowser } from '@segment/analytics-next';
 import { environment } from 'src/environments/environment';
-export const analytics = AnalyticsBrowser.load({ writeKey: environment.segmentWritekey })
+export const analytics = AnalyticsBrowser.load({
+  writeKey: 'YOUR_WRITE_KEY',
+});
 
 @Component({
   selector: 'app-home',
@@ -12,10 +14,9 @@ export class HomeComponent {
   public firstName: string = '';
   public lastName: string = '';
   user() {
-    analytics.track('User Data',
-    {
-      firstName : this.firstName,
-      lastName : this.lastName
+    analytics.track('User Data', {
+      firstName: this.firstName,
+      lastName: this.lastName,
     });
   }
 }
